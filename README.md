@@ -25,4 +25,4 @@ Ensure Docker is running in the background before starting the application. The 
 
 ## Watch the Video
 
-[Watch the video](My_pathway_llm_project/pathway/llm-app/examples/pipelines/demo-question-answering/video/Rag_application.mp4)
+[Watch the video](pathway/llm-app/examples/pipelines/demo-question-answering/video/Rag_application.mp4)
