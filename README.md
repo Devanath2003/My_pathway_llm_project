@@ -23,3 +23,6 @@ This is a GUI application for a Retrieval-Augmented Generation (RAG) project bui
 ## Instruction:
 Ensure Docker is running in the background before starting the application. The LLM engine will only work if the Docker engine is active.
 
+## Watch the Video
+
+[Watch the video](pathway/llm-app/examples/pipelines/demo-question-answering/video/Rag_application.mp4)
