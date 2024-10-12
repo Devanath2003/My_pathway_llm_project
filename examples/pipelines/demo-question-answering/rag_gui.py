@@ -59,10 +59,10 @@ class RAGApplication(ctk.CTk):
 
         self.engine_process = None
 
-        # Register the shutdown function to be called on exit
+       
         atexit.register(self.shutdown_engine)
 
-        # Bind the close event
+       
         self.protocol("WM_DELETE_WINDOW", self.on_closing)
 
     def browse_path(self):
