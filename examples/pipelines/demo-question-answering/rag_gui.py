@@ -88,19 +88,19 @@ class RAGApplication(ctk.CTk):
             threading.Thread(target=self.update_output, args=(self.engine_process.stdout,), daemon=True).start()
             threading.Thread(target=self.update_output, args=(self.engine_process.stderr,), daemon=True).start()
             self.output_text.insert("end", "Engine started. Please wait...\n\n")
-            self.animate_loading(10)  # 10 seconds animation
+            self.animate_loading(10)  
         else:
             self.output_text.insert("end", "Engine is already running.\n\n")
 
     def animate_loading(self, seconds):
         frames = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
-        for i in range(seconds * 2):  # 2 frames per second
+        for i in range(seconds * 2): 
             self.output_text.delete("end-2l", "end")
             self.output_text.insert("end", f"Loading {frames[i % len(frames)]}\n")
             self.output_text.see("end")
             self.update()
             time.sleep(0.5)
-        self.output_text.delete("end-2l", "end")  # Remove the last loading frame
+        self.output_text.delete("end-2l", "end") 
         self.output_text.insert("end", "You can now enter your prompt and click Execute.\n\n")
 
     def execute_prompt(self):
@@ -135,12 +135,12 @@ class RAGApplication(ctk.CTk):
 
     def update_output(self, pipe):
         for line in iter(pipe.readline, b''):
-            print(line.decode().strip())  # Print to console/VS Code terminal
+            print(line.decode().strip())  
 
     def shutdown_engine(self):
         if self.engine_process:
             print("Shutting down the engine...")
-            if os.name == 'nt':  # Windows
+            if os.name == 'nt':  
                 self.engine_process.send_signal(signal.CTRL_BREAK_EVENT)
             else:  # Unix/Linux
                 self.engine_process.send_signal(signal.SIGINT)
