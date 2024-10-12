@@ -1,28 +1,25 @@
-Pathway_LLM Application
+# Pathway LLM Application
 
 This is a GUI application for a Retrieval-Augmented Generation (RAG) project built using Python and CustomTkinter. The application allows users to upload PDF documents, run a local LLM engine, and execute prompts to get answers.
 
-Features
+## Features
 
-Upload PDF documents for processing.
+- Upload PDF documents for processing.
+- Execute prompts against the LLM and receive answers.
+- Start the Docker engine directly from the GUI.
 
-Execute prompts against the LLM and receive answers.
+## Requirements
 
-Start the Docker engine directly from the GUI.
+- Python 3.x
+- Docker
 
-Requirements
+## How to Run
 
-Python 3.x
+1. Clone this repository.
+2. Install Required Packages: pip install -r requirements.txt
+3. Run the rag_gui.py file from the path pathway\llm-app\examples\pipelines\demo-question-answering.
 
-Docker
 
-How to run :
-
-1)Clone this repository
-
-2)Install Required Packages: pip install -r requirements.txt
-
-3)Run the rag_gui.py file from pathway\llm-app\examples\pipelines\demo-question-answering
-
-Instruction : Ensure Docker is running in the background before starting the application. The LLM engine will only work if the Docker engine is active.
+## Instruction:
+Ensure Docker is running in the background before starting the application. The LLM engine will only work if the Docker engine is active.
 
