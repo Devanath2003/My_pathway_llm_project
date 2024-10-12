@@ -1,4 +1,5 @@
 Pathway_LLM Application
+
 This is a GUI application for a Retrieval-Augmented Generation (RAG) project built using Python and CustomTkinter. The application allows users to upload PDF documents, run a local LLM engine, and execute prompts to get answers.
 
 Features
